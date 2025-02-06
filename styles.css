@@ -1,12 +1,13 @@
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fff5f5;
-    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -28,10 +29,16 @@ body {
     text-shadow: 2px 2px 4px rgba(255, 107, 129, 0.2);
 }
 
+h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+}
+
 .gif_container img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -43,35 +50,42 @@ body {
 }
 
 .btn {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     padding: 12px 24px;
     font-size: 20px;
     border: 2px solid #ff6b81;
     border-radius: 10px;
-    cursor: pointer;
     transition: all 0.3s ease;
     background-color: #ff6b81;
     color: white;
     font-family: 'Indie Flower', cursive;
     box-shadow: 0 4px 10px rgba(255, 107, 129, 0.3);
 }
-
+    
 .btn:hover {
     background-color: white;
     color: #ff6b81;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(255, 107, 129, 0.4);
 }
-
-#noButton {
+    
+.no-button, #noButton {
     background-color: #ff4757;
     border-color: #ff4757;
 }
-
-#noButton:hover {
+    
+.no-button:hover, #noButton:hover {
     background-color: white;
     color: #ff4757;
 }
-
+    
 @keyframes wiggle {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(-5deg); }
